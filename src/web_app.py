@@ -103,6 +103,7 @@ with open("templates/index.html", "w") as f:
     """)
 
 # Set up templates
+
 templates = Jinja2Templates(directory="templates")
 
 # Initialize agents
