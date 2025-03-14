@@ -123,10 +123,11 @@ async def home(request: Request):
 async def analyze_conversation(request: Request, conversation: str = Form(...)):
 
     # Process the conversation through the agent pipeline
-    
+
     results = {}
     
     # Step 1: Clean and structure the transcription
+    
     results["transcription"] = agents["transcription"].process(conversation)
     
     # Step 2: Analyze the conversation
