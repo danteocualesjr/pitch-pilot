@@ -127,10 +127,11 @@ async def analyze_conversation(request: Request, conversation: str = Form(...)):
     results = {}
     
     # Step 1: Clean and structure the transcription
-    
+
     results["transcription"] = agents["transcription"].process(conversation)
     
     # Step 2: Analyze the conversation
+    
     results["analysis"] = agents["analysis"].process(results["transcription"])
     
     # Step 3: Generate recommendations
