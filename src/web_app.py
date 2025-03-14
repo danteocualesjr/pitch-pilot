@@ -18,6 +18,7 @@ from src.agents.agent_logic import (
 app = FastAPI(title=APP_NAME, version=APP_VERSION)
 
 # Create templates and static directories if they don't exist
+
 os.makedirs("templates", exist_ok=True)
 os.makedirs("static", exist_ok=True)
 
