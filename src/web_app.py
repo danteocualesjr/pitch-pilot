@@ -23,6 +23,7 @@ os.makedirs("templates", exist_ok=True)
 os.makedirs("static", exist_ok=True)
 
 # Create a simple HTML template
+
 with open("templates/index.html", "w") as f:
     f.write("""
     <!DOCTYPE html>
