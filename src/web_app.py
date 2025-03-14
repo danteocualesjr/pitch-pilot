@@ -14,6 +14,7 @@ from src.agents.agent_logic import (
 )
 
 # Initialize FastAPI app
+
 app = FastAPI(title=APP_NAME, version=APP_VERSION)
 
 # Create templates and static directories if they don't exist
