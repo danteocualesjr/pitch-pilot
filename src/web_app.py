@@ -107,6 +107,7 @@ with open("templates/index.html", "w") as f:
 templates = Jinja2Templates(directory="templates")
 
 # Initialize agents
+
 agents = {
     "transcription": TranscriptionAgent(),
     "analysis": AnalysisAgent(),
